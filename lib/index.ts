@@ -15,7 +15,7 @@ const tooltip = createTooltip();
 document.addEventListener('mousemove', e => {
     setTooltipPostion(e.pageX, e.pageY);
 
-    const hoveredElement = document.elementFromPoint(e.pageX, e.pageY);
+    const hoveredElement = document.elementFromPoint(e.x, e.y);
     if (hoveredElement) {
         setTooltipFont(hoveredElement);
     }
