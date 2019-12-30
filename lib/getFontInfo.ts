@@ -1,4 +1,6 @@
-export function getFontInfo(element: Element) {
+export function getFontInfo(element: Element): string {
     const style = getComputedStyle(element);
-    console.log(style);
+    console.log('font: ' + style.font);
+    console.log('font family: ' + style.fontFamily);
+    return style.fontFamily;
 }

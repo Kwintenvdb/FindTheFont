@@ -21,7 +21,7 @@ module.exports = {
     },
     plugins: [
         new CopyPlugin([
-            { from: 'manifest.json', to: './' }
+            { from: 'src', to: './' }
         ])
     ],
     watch: true,
