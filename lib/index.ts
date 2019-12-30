@@ -34,8 +34,13 @@ function setTooltipFont(e: Element) {
 function createTooltip(): HTMLElement {
     const div = document.createElement('div');
     div.style.position = 'absolute';
+    div.style.backgroundColor = 'rgba(0,0,0,0.75)';
+    div.style.color = 'white';
+    div.style.padding = '5px 10px';
+    div.style.borderRadius = '5px';
     div.innerText = 'testy test';
     div.style.pointerEvents = 'none';
+    div.style.zIndex = '1000000';
     document.body.appendChild(div);
     return div;
 }
